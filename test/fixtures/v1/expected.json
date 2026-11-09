@@ -1,0 +1,93 @@
+{
+  "inbox": {
+    "astra": [
+      "m_2606c000-063f-4ad6-bbb4-a19dca80f827",
+      "m_027cf11b-34f8-4fa1-a021-2e52fcab1151"
+    ],
+    "bolt": [
+      "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a"
+    ]
+  },
+  "history": [
+    {
+      "id": "m_2606c000-063f-4ad6-bbb4-a19dca80f827",
+      "sequence": 1,
+      "sender": {
+        "id": "p_62b16549-00b4-4f2b-b6dd-d4818237bbe9",
+        "name": "human",
+        "kind": "human",
+        "role": "owner"
+      },
+      "recipientIds": [
+        "p_d12aae66-a7d2-4468-937a-d539de7e7bc5",
+        "p_21c695e8-27b7-4cd7-b489-15320ce676ff"
+      ],
+      "text": "Begin the review.",
+      "createdAt": "2026-10-07T20:25:50.495Z",
+      "threadId": "m_2606c000-063f-4ad6-bbb4-a19dca80f827"
+    },
+    {
+      "id": "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a",
+      "sequence": 2,
+      "sender": {
+        "id": "p_d12aae66-a7d2-4468-937a-d539de7e7bc5",
+        "name": "Astra",
+        "kind": "agent",
+        "role": "Peer"
+      },
+      "recipientIds": [
+        "p_21c695e8-27b7-4cd7-b489-15320ce676ff"
+      ],
+      "text": "Please review R1.",
+      "createdAt": "2026-10-07T20:25:50.503Z",
+      "threadId": "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a"
+    },
+    {
+      "id": "m_027cf11b-34f8-4fa1-a021-2e52fcab1151",
+      "sequence": 3,
+      "sender": {
+        "id": "p_21c695e8-27b7-4cd7-b489-15320ce676ff",
+        "name": "Bolt",
+        "kind": "agent",
+        "role": "Peer"
+      },
+      "recipientIds": [
+        "p_d12aae66-a7d2-4468-937a-d539de7e7bc5"
+      ],
+      "text": "Looking now.",
+      "createdAt": "2026-10-07T20:25:50.510Z",
+      "replyTo": "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a",
+      "threadId": "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a"
+    }
+  ],
+  "retry": {
+    "key": "send-2",
+    "body": {
+      "to": "Bolt",
+      "text": "Please review R1."
+    },
+    "result": {
+      "message": {
+        "id": "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a",
+        "sequence": 2,
+        "sender": {
+          "id": "p_d12aae66-a7d2-4468-937a-d539de7e7bc5",
+          "name": "Astra",
+          "kind": "agent",
+          "role": "Peer"
+        },
+        "recipientIds": [
+          "p_21c695e8-27b7-4cd7-b489-15320ce676ff"
+        ],
+        "text": "Please review R1.",
+        "createdAt": "2026-10-07T20:25:50.503Z",
+        "threadId": "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a"
+      }
+    }
+  },
+  "messageIds": [
+    "m_2606c000-063f-4ad6-bbb4-a19dca80f827",
+    "m_dc02e78d-eb61-4d44-bf5e-0d143a00854a",
+    "m_027cf11b-34f8-4fa1-a021-2e52fcab1151"
+  ]
+}

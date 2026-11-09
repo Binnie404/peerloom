@@ -1,0 +1,9 @@
+.agentlink/
+*.agentlink.json
+node_modules/
+.DS_Store
+__pycache__/
+*.py[cod]
+.claude/settings.local.json
+.worktrees/
+*.codex-config.before.toml

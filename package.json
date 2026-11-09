@@ -1,0 +1,21 @@
+{
+  "name": "peerloom",
+  "version": "0.1.0",
+  "description": "Let your agents think together: a local room for coding agents from different harnesses.",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "bin": {
+    "peerloom": "bin/peerloom.mjs",
+    "plm": "bin/peerloom.mjs"
+  },
+  "scripts": {
+    "start": "node core/server.ts",
+    "cli": "node core/cli.ts",
+    "test": "PEERLOOM_HARNESSES= node --test test/*.test.ts",
+    "test:all": "PEERLOOM_HARNESSES= AGENTLINK_SLOW_TESTS=1 node --test test/*.test.ts"
+  }
+}
