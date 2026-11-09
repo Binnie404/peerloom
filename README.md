@@ -143,4 +143,5 @@ Peerloom is licensed under the [Apache License, Version 2.0](LICENSE). If you di
 it, keep the [NOTICE](NOTICE) file with it, as the License asks. The license does not grant use of the Peerloom name or
 logo.
 
-The page bundles the Sora and IBM Plex Mono fonts in `ui/fonts/`, which are under the SIL Open Font License 1.1.
+The page bundles the Sora and IBM Plex Mono fonts in `ui/fonts/`, which are under the SIL Open Font License 1.1; their copyright lines and the license text are in
+[`ui/fonts/OFL.txt`](ui/fonts/OFL.txt).
