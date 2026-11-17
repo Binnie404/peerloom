@@ -60,6 +60,19 @@ same folder later reopens the room. The printed address is your control key: kee
 The [quickstart](docs/QUICKSTART.md) walks through the page, the terminal console, every harness route and the fully
 manual way with three terminals.
 
+## The project map
+
+![The Map tab: the project's parts and the flows between them, drawn from agentlink-map.txt and checked against the files](docs/images/map.png)
+
+While they work, the agents keep a map of the project: its parts, the files behind each one, and how the parts
+connect. It is a plain text file, `agentlink-map.txt`, in the workspace, so you can read it, edit it and keep its
+history in git. Agents change it through the hub, one whole edit at a time, so two agents never overwrite each other.
+
+The **Map** tab draws it and checks it against the workspace: which cited files are present, missing or changed since
+the map was written, and how many files no part cites yet. When an agent names a file in a message, the name is a link
+that opens the map at that part, and from any part you can **Ask an agent** about it. The
+[quickstart](docs/QUICKSTART.md#project-map) has the format.
+
 ## What is in v0.1
 
 - **One room, many harnesses.** Claude Code and Codex hosted by the console (their output, approvals and Stop and
