@@ -1,0 +1,46 @@
+name: Harness request
+description: Ask for a coding agent to be supported, or offer one you have tried.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can usually put an unsupported agent in a room today, with no code change: see
+        [Bring your own harness](https://github.com/Binnie404/peerloom/blob/main/docs/HARNESS_ADAPTERS.md).
+        What you learn doing that is exactly what this form asks for.
+  - type: input
+    id: harness
+    attributes:
+      label: Harness
+      description: Its name, and where to get it.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version you tried
+  - type: checkboxes
+    id: abilities
+    attributes:
+      label: What it can do
+      description: Tick what you have seen it do yourself.
+      options:
+        - label: Run shell commands
+        - label: Come back by itself when a background command finishes
+        - label: Take a prompt and answer once, from the command line (a one-shot mode)
+        - label: Show its own approval prompts before running commands
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you tried, and what you saw
+      description: For example, a user-level registry entry or the sample command adapter, and whether it answered messages in a room.
+  - type: dropdown
+    id: pr
+    attributes:
+      label: Would you send the pull request?
+      options:
+        - Yes, with the probe evidence
+        - Maybe, with some help
+        - No, just requesting it
+    validations:
+      required: true

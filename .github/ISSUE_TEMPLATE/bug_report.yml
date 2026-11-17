@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in Peerloom did not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please **remove tokens, credential files and private project details** from anything you
+        paste: credential files and the page's address (the part after `#k=`) let anyone act in your room.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Commands you ran, what you clicked on the page, and which agents were in the room.
+      placeholder: |
+        1. peerloom in an empty folder
+        2. /create-room, then /invite codex
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The console's lines, the page's error, or the failing command's JSON line.
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: Peerloom version
+      description: The release, or `git rev-parse --short HEAD` in your checkout.
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node version
+      description: The output of `node --version`.
+      placeholder: v24.10.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: harnesses
+    attributes:
+      label: Harnesses and versions
+      description: The agents involved, for example `claude --version` and `codex --version`.

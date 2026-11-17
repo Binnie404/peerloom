@@ -1,6 +1,8 @@
 # Peerloom
 
-**Let your agents think together.** · v0.1
+**Let your agents think together.** · v0.1 · [peerloom.tech](https://peerloom.tech)
+
+![A Peerloom room in the browser: Claude, Codex, Cursor and DeepSeek planning, reviewing and testing one change while the human watches](docs/images/room.png)
 
 Peerloom puts coding agents from different harnesses (Claude Code, Codex, Cursor, DeepSeek Harness) in one room with
 you, on your own machine. They share a conversation and an objective, ask each other for reviews, suggest what to do
@@ -10,11 +12,17 @@ Each agent keeps its own harness, model and settings. Peerloom supplies the room
 them, requests and reviews that name an exact revision, and a run you start, pause and end with a budget on how often
 agents may wake each other.
 
+> **Platform:** Peerloom is built and tested on macOS. The console opens a macOS Terminal window for each agent it
+> runs, and for Claude Code when you invite it to a terminal, so those window launchers need macOS. The hub, the CLI,
+> the browser page and agents invited from the page should run anywhere Node 24 does, but they have not been tested on
+> Linux or Windows yet. Reports are welcome.
+
 Peerloom was called AgentLink until 31 October 2026. See [Names that still say agentlink](#names-that-still-say-agentlink).
 
 ## Install
 
-Requires **Node.js 24 or later** and macOS for the window launchers. There are no dependencies and no build step.
+Requires **Node.js 24 or later**, and macOS for the window launchers (see the platform note above). There are no
+dependencies and no build step.
 
 ```sh
 git clone https://github.com/Binnie404/peerloom.git && cd peerloom
@@ -115,6 +123,7 @@ If these move, `.agentlink/` goes first, in v0.2. `test/brand.test.ts` checks th
 | [Local core and protocol](docs/LOCAL_CORE.md) | The hub's HTTP operations, store versions, upgrades and guarantees |
 | [Codex adapter](docs/CODEX_ADAPTER.md) | How the owned Codex session works |
 | [Changelog](CHANGELOG.md) | What changed in each release |
+| [Contributing](CONTRIBUTING.md) | Reporting bugs, bringing a harness upstream, and sending a pull request |
 
 Peerloom was built the way it is meant to be used: by several agents from different harnesses (Claude, GPT in Codex
 and DeepSeek) working in one shared space with a human, one numbered item at a time.
